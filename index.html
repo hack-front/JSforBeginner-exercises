@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<meta charset="UTF-8" />
-		<title>Calculator</title>
-		<link rel="stylesheet" href="">
-	</head>
-	<body>
 
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
 
-		<div id="calculator1">
-			<p>Calculator - Version 1</p>
-			<form>
-				<input type="text" id="input">
-				<a href="#" onClick="calculate1()">Calculate!</a>
-			</form>
-			<p id="answer1"></p>
-		</div>
+<body>
+    <div id="calculator1">
+        <h2>Calculator - Version 1</h2>
+        <form>
+            <input type="text" id="input">
+            <a href="#" onClick="calculate1()">Calculate!</a>
+        </form>
+        <p id="answer1"></p>
+    </div>
+    <div id="calculator2">
+        <h2>Calculator - Version 2</h2>
+        <form>
+            <input type="text" id="number1" placeholder="First Number">
+            <input type="text" id="operator" placeholder="+,-,*,/">
+            <input type="text" id="number2" placeholder="Second Number">
+            <a href="#" onClick="calculate2()">Calculate!</a>
+        </form>
+        <p id="answer2"></p>
+    </div>
+    <script src="calculator.js"></script>
+</body>
 
-		<div id="calculator2">
-			<p>Calculator - Version 2</p>
-			<form>
-				<input type="text" id="number1" placeholder="First Number">
-				<input type="text" id="operator" placeholder="+,-,*,/">
-				<input type="text" id="number2" placeholder="Second Number">
-				<a href="#" onClick="calculate2()">Calculate!</a>
-			</form>
-			<p id="answer2"></p>
-		</div>
-
-
-		<script src="calculator.js"></script>
-	</body>
 </html>
