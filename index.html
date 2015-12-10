@@ -6,19 +6,27 @@
 		<link rel="stylesheet" href="">
 	</head>
 	<body>
-		<div id="calculator">
+
+
+		<div id="calculator1">
+			<p>Calculator - Version 1</p>
 			<form>
-				<!-- <input type="text" id="input"> -->
-				<!-- <a href="#" onClick="calculate()">Calculate!</a> -->
+				<input type="text" id="input">
+				<a href="#" onClick="calculate1()">Calculate!</a>
+			</form>
+		</div>
 
-				<input type="text" id="number1">
-				<input type="text" id="operator">
-				<input type="text" id="number2">
-
-
+		<div id="calculator2">
+			<p>Calculator - Version 2</p>
+			<form>
+				<input type="text" id="number1" placeholder="First Number">
+				<input type="text" id="operator" placeholder="+,-,*,/">
+				<input type="text" id="number2" placeholder="Second Number">
 				<a href="#" onClick="calculate2()">Calculate!</a>
 			</form>
 		</div>
+
+
 		<script src="calculator.js"></script>
 	</body>
 </html>

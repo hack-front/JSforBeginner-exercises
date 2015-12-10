@@ -1,4 +1,4 @@
-function calculate(){
+function calculate1(){
 	var str = document.getElementById("input").value;
 	var characters = str.split('');
 
