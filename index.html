@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<div id="calculator">
-			<div id="numbers">
+			<!-- <div id="numbers">
 				<div class="button 0" value="0" onClick="receiveChar(0)">0</div>
 				<div class="button 1" value="1" onClick="receiveChar(1)">1</div>
 				<div class="button 2" value="2" onClick="receiveChar(2)">2</div>
@@ -23,7 +23,11 @@
 				<div class="button" onClick="receiveChar('*')">*</div>
 				<div class="button" onClick="receiveChar('/')">/</div>
 				<div class="button" onClick="compute()">=</div>
-			</div>
+			</div> -->
+			<form>
+				<input type="text" id="input">
+				<a href="#"onClick="compute()">Calculate!</a>
+			</form>
 		</div>
 		<script src="calculator.js"></script>
 	</body>

@@ -1,11 +1,13 @@
-var characters = [];
+// var characters = [];
 
-function receiveChar(char){
-	characters.push(char);
-	alert(characters);
-}
+// function receiveChar(char){
+// 	characters.push(char);
+// 	alert(characters);
+// }
 
 function compute(){
+	var str = document.getElementById("input").value;
+	var characters = str.split('');
 
 	function operation(n1, n2, op){
 		switch(op){
@@ -20,11 +22,12 @@ function compute(){
 		}
 	}
 
-
 	var operators = ['*','/', '+', '-'];
-	var digits = [0,1,2,3,4,5,6,7,8,9];
-	var answer = 0;
+	var digits = ['0','1','2','3','4','5','6','7','8','9'];
+	var answer;
 
+
+	//Begin sorting the characters into num1, num2, and operator
 	var num1;
 	var num2;
 	var operator;
@@ -34,23 +37,18 @@ function compute(){
 		if(digits.indexOf(characters[i]) >= 0){
 			numbers.push(characters[i]);
 		} else {
-		//not a digit
 			operator = characters[i];
 
 			if(!num1){
-				num1 = +(numbers.join(''));
+				num1 = +numbers.join('');
 			}
 			numbers = [];
 		}
 	}
-	num2 = +(numbers.join(''));
+	num2 = +numbers.join('');
+	//End of Sorting Characters
 
 	answer = operation(num1, num2, operator);
-
-	characters = [];
-	console.log("Here are the steps and the answer: ");
-	console.log(num1);
-	console.log(operator);
-	console.log(num2);
-	console.log(answer);
+	alert('The answer is: ' + answer.toString());
+	return answer;
 }
