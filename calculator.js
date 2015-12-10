@@ -1,10 +1,3 @@
-// var characters = [];
-
-// function receiveChar(char){
-// 	characters.push(char);
-// 	alert(characters);
-// }
-
 function compute(){
 	var str = document.getElementById("input").value;
 	var characters = str.split('');
