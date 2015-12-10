@@ -43,8 +43,9 @@ function calculate1(){
 
 	answer = operation(num1, num2, operator);
 	alert('The answer is: ' + answer.toString());
+	document.getElementById("answer1").text = answer;
 	return answer;
-}
+}	
 
 function calculate2(){
 	var num1 = +document.getElementById("number1").value;
@@ -66,5 +67,6 @@ function calculate2(){
 
 	var answer = operation(num1, num2, operator);
 	alert('The answer is: ' + answer.toString());
+	document.getElementById("answer2").text = answer;
 	return answer;
 }
