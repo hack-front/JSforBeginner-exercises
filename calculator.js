@@ -16,7 +16,7 @@ function calculate1(){
 	}
 
 	var operators = ['*','/', '+', '-'];
-	var digits = ['0','1','2','3','4','5','6','7','8','9'];
+	var digits = ['0','1','2','3','4','5','6','7','8','9', '.'];
 	var answer;
 
 
@@ -42,8 +42,8 @@ function calculate1(){
 	//End of Sorting Characters
 
 	answer = operation(num1, num2, operator);
-	alert('The answer is: ' + answer.toString());
-	document.getElementById("answer1").text = answer;
+	// alert('The answer is: ' + answer.toString());
+	document.getElementById("answer1").textContent = 'The calculated answer is '+ answer;
 	return answer;
 }	
 
@@ -66,7 +66,7 @@ function calculate2(){
 	}
 
 	var answer = operation(num1, num2, operator);
-	alert('The answer is: ' + answer.toString());
-	document.getElementById("answer2").text = answer;
+	// alert('The answer is: ' + answer.toString());
+	document.getElementById("answer2").textContent = 'The calculated answer is '+answer;
 	return answer;
 }
