@@ -45,3 +45,26 @@ function calculate(){
 	alert('The answer is: ' + answer.toString());
 	return answer;
 }
+
+function calculate2(){
+	var num1 = +document.getElementById("number1").value;
+	var num2 = +document.getElementById("number2").value;
+	var operator = document.getElementById("operator").value;
+
+	function operation(n1, n2, op){
+		switch(op){
+			case('*'):
+				return n1*n2;
+			case('/'):
+				return n1/n2;
+			case('+'):
+				return n1+n2;
+			case('-'):
+				return n1-n2;
+		}
+	}
+
+	var answer = operation(num1, num2, operator);
+	alert('The answer is: ' + answer.toString());
+	return answer;
+}
